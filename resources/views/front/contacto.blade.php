@@ -38,7 +38,7 @@
                         <input type="text" autocomplete="phone" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" name="telefono" id="telefono" placeholder="Telefono" required>
                     </div>
 
-                    <div class="col-span-6 sm:col-span-4">
+                    <div class="col-span-3 sm:col-span-4">
                     <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
                     <textarea class="shadow-sm focus:ring-indigo-700 focus:border-indigo-700 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md" name="mensaje" id="mensaje" placeholder="Escriba su Mensaje" rows="3" required></textarea>
                     </div>
