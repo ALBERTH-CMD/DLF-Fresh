@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'PROESSA Consultoria Alimentaria de S.A. DE C.V.'),
+    'name' => env('APP_NAME', 'DLF Fresh Product'),
 
     /*
     |--------------------------------------------------------------------------
@@ -183,6 +183,7 @@ return [
         App\Providers\ComposerServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+        Chatify\ChatifyServiceProvider::class,
 
     ],
 
@@ -242,6 +243,7 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
+        'Chatify' => Chatify\Facades\ChatifyMessenger::class,
     ],
 
 ];

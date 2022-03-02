@@ -31,3 +31,5 @@ Route::post('contacto', [App\Http\Controllers\FrontController::class, 'contactoe
 // Google login
 Route::get('login/{drive}', [App\Http\Controllers\LoginController::class, 'redirectToProvider'])->name('login.google');
 Route::get('login/{drive}/callback', [App\Http\Controllers\LoginController::class, 'handleProviderCallback']);
+
+//Route::get('chatify', [App\Http\Controllers\vendor\Chatify\MessagesController::class, 'index'])->name(('chatify'));
