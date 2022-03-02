@@ -11,6 +11,7 @@ use App\Models\Producto;
 use App\Models\Categoria;
 use Illuminate\Http\Request;
 use App\Models\Configuracion;
+use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Support\Facades\Mail;
 use SebastianBergmann\CodeCoverage\StaticAnalysis\Cache;
 //use CyrildeWit\EloquentViewable\Support\Period;
@@ -63,7 +64,7 @@ class FrontController extends Controller
 
     public function contactoenvio(Request $r){
 
-     if(!empty($r)){
+        if(!empty($r)) {
 
         $email = new EmailSend($r->all());
         Mail::to('developeddreamscompany@gmail.com')->send($email);
@@ -73,14 +74,9 @@ class FrontController extends Controller
          $telefono  = $_POST['telefono'];
          $mensaje   = $_POST['mensaje'];
 
-         if(mail($email,"ASUNTO CONTACTO ",$mensaje)){
-            $resultado = "su mensaje no fue enviado";
-         }else{
-            $resultado = "Gracias!!!. se envió tu mensaje";
-         }
-            return redirect()->back()->with('success',$resultado);
-     }else{
-         return redirect()->back()->with('success',"SE ENVIO EL MENSAJE EXITOSAMENTE, EN BREVE UN PROMOTOR PROESSA LO CONTACTAR");
-     }
+         Alert::info('EXCELENTE!!!!!', 'Su Mensaje Fue Enviado exitosamente, en Brevedad Un Ejecutivo DLF Fresh, Se comunicara con usted'.$nombre);
+
+         return redirect()->back();
+        }
     }
 }

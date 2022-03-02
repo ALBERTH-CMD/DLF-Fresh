@@ -13,6 +13,7 @@
         "fortawesome/font-awesome": "^5.15",
         "fruitcake/laravel-cors": "^2.0",
         "google/apiclient": "^2.11",
+        "guzzlehttp/guzzle": "^7.4",
         "intervention/image": "^2.5",
         "jeroennoten/laravel-adminlte": "^3.6",
         "laravel/framework": "^8.83.2",

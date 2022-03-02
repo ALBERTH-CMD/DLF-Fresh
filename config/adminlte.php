@@ -225,6 +225,12 @@ return [
     */
 
     'menu' => [
+
+        [
+            'type'         => 'darkmode-widget',
+            'topnav_right' => true, // Or "topnav => true" to place on the left.
+        ],
+        
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
