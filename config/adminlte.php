@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>PROESSA</b>ConsultoriaAlimentaria',
+    'logo' => '<b>DLF Fresh</b>Product',
     'logo_img' => 'vendor/adminlte/dist/img/Proessa.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -230,7 +230,7 @@ return [
             'type'         => 'darkmode-widget',
             'topnav_right' => true, // Or "topnav => true" to place on the left.
         ],
-        
+
         [
             'type'         => 'fullscreen-widget',
             'topnav_right' => true,
