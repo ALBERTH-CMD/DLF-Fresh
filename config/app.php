@@ -106,7 +106,7 @@ return [
     |
     */
 
-    'faker_locale' => 'es_LA',
+    'faker_locale' => 'es_MX',
 
     /*
     |--------------------------------------------------------------------------
@@ -183,7 +183,6 @@ return [
         App\Providers\ComposerServiceProvider::class,
         Laravel\Socialite\SocialiteServiceProvider::class,
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
-        Chatify\ChatifyServiceProvider::class,
 
     ],
 
@@ -243,7 +242,6 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
-        'Chatify' => Chatify\Facades\ChatifyMessenger::class,
     ],
 
 ];
