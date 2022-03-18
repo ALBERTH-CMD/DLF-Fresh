@@ -54,6 +54,14 @@
                 @enderror
             </div>
 
+            <div class="form-group">
+                {!! Form::label('avatar','Avatar') !!}
+                {!! Form::File('avatar',null,['class'=>'form-control','placeholder'=>'Teclee la Contraseña del Usuario']) !!}
+                @error('avatar')
+                <span class="text-danger">{{$message}}</span>
+                @enderror
+            </div>
+
 
             {!! Form::submit('Crear Usuario',['class'=>'btn btn-outline-primary']) !!}
         {!! Form::close() !!}

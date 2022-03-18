@@ -15,7 +15,7 @@
             {!! Form::open(['route'=>['admin.configuracion.update',$registro],'method'=>'PUT','files'=>true]) !!}
 
 
-            <div class="jumbotron">
+            <div>
                 <div class="form-group">
                     <label for="seo_title">INGRESE TITLE</label>
                     {!! Form::text('seo_title',$registro->seo_title,['class'=>'form-control','maxlength'=>'67']) !!}

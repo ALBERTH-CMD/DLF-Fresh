@@ -8,7 +8,7 @@ use App\Models\Status;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
 use App\Models\User;
-
+use Illuminate\Support\Facades\Storage;
 class UserController extends Controller
 {
     public function __construct(){
@@ -43,8 +43,16 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $data=request()->all();
+
+        if ($request->hasFile('avatar')) {
+            $file = $request->file('avatar');
+            $date['avatar'] = $file->getClientOriginalName();
+            $request->file('avatar')->storeAs('public/Avatars/' . auth()->id(), $date['avatar']);
+        }
+
         User::create([
             'name'=>$data['name'],
+            'avatar'=>$date['avatar'],
             'proessa_id'=>$data['proessa_id'],
             'email'=>$data['email'],
             'password'=>bcrypt($data['password']),
