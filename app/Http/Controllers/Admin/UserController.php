@@ -31,7 +31,8 @@ class UserController extends Controller
     {
         $status = User::all();
         $proessas = Proessa::pluck('name','id');
-        return view('admin.users.create',compact('status','proessas'));
+        $role = Role::pluck('name','id');
+        return view('admin.users.create',compact('status','proessas','role'));
     }
 
     /**

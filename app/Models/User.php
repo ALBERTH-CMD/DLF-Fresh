@@ -86,4 +86,13 @@ class User extends Authenticatable
     {
         return $this->getRoleNames()[0];
     }
+
+    public function chats() 
+    {
+        return $this->belongsToMany('App\Models\Chat');
+    }
+
+    public function MessageChat() {
+        return $this->hasMany('App\Models\Message');
+    }
 }

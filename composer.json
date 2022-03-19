@@ -7,6 +7,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "ext-gd": "*",
+        "beyondcode/laravel-websockets": "^1.13",
         "cyrildewit/eloquent-viewable": "^6.0",
         "fakerphp/faker": "^1.4.",
         "fideloper/proxy": "^4.4",

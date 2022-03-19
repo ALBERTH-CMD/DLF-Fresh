@@ -25,3 +25,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('dashboard',[DashboardContr
 
 Route::get('messages/{message}', [ App\Http\Controllers\Admin\MessageController::class, 'show'])->name('admin.messages.show');
 Route::post('messages', [App\Http\Controllers\Admin\MessageController::class, 'store'])->name('messages.store');
+
+//MessagesChat
+Route::get('chat', [App\Http\Controllers\Admin\ChatController::class, 'show'])->name('chat.show');
