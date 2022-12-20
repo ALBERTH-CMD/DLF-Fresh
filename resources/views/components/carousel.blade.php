@@ -19,7 +19,7 @@ $items = array_merge($items, $slots)
         <div class="carousel-inner">
         @forelse ($carrusel as $item)
           <div class="carousel-item @if($loop->index==0) active @endif">
-            <img src="{{ asset('/img/carrusel') }}/{{$item->urlfoto}}" class="d-block w-100" alt="{{$item->frase}}">
+            <img src="{{ secure_asset('/img/carrusel') }}/{{$item->urlfoto}}" class="d-block w-100" alt="{{$item->frase}}">
             <div class="pb-5 carousel-caption d-none d-md-block">
                 <h5>{{$item->descripcion}}</h5>
                 <a href="{{$item->link}}" class="btn btn-outline-danger">VER MÁS</a>

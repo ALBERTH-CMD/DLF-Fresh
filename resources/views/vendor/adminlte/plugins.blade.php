@@ -5,7 +5,7 @@
             {{-- Setup the file location  --}}
             @php
                 if (! empty($file['asset'])) {
-                    $file['location'] = asset($file['location']);
+                    $file['location'] = secure_asset($file['location']);
                 }
             @endphp
 

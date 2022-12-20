@@ -29,7 +29,7 @@
                 </div>
                 <div class="form-group">
                     <label for="urlsomos">IMAGEN SOMOS</label> <br>
-                    <img src="{{ asset('/img/empresa') }}/{{$empresa->urlsomos}}">
+                    <img src="{{ secure_asset('/img/empresa') }}/{{$empresa->urlsomos}}">
                     {!! Form::file('urlsomos') !!}
                 </div>
 
@@ -39,7 +39,7 @@
                 </div>
                 <div class="form-group">
                     <label for="urlhistoria">IMAGEN HISTORIA</label> <br>
-                    <img src="{{ asset('/img/empresa') }}/{{$empresa->urlhistoria}}">
+                    <img src="{{ secure_asset('/img/empresa') }}/{{$empresa->urlhistoria}}">
                     {!! Form::file('urlhistoria') !!}
                 </div>
 
@@ -49,7 +49,7 @@
                 </div>
                 <div class="form-group">
                     <label for="urlmision">IMAGEN MISIÓN</label> <br>
-                    <img src="{{ asset('/img/empresa') }}/{{$empresa->urlmision}}">
+                    <img src="{{ secure_asset('/img/empresa') }}/{{$empresa->urlmision}}">
                     {!! Form::file('urlmision') !!}
                 </div>
 
@@ -60,7 +60,7 @@
                 </div>
                 <div class="form-group">
                     <label for="urlvision">IMAGEN VISIÓN</label> <br>
-                    <img src="{{ asset('/img/empresa') }}/{{$empresa->urlvision}}">
+                    <img src="{{ secure_asset('/img/empresa') }}/{{$empresa->urlvision}}">
                     {!! Form::file('urlvision') !!}
                 </div>
 
@@ -70,7 +70,7 @@
                 </div>
                 <div class="form-group">
                     <label for="urlvalores">IMAGEN VALORES</label> <br>
-                    <img src="{{ asset('/img/empresa') }}/{{$empresa->urlvalores}}">
+                    <img src="{{ secure_asset('/img/empresa') }}/{{$empresa->urlvalores}}">
                     {!! Form::file('urlvalores') !!}
                 </div>
             </div>

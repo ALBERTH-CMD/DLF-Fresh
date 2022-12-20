@@ -26,7 +26,7 @@
                 </div>
                 <div class="form-group">
                     <label for="urlfoto">IMAGEN</label> <br>
-                    <img src="{{ asset('/img/carrusel') }}/{{$carrusel->urlfoto}}">
+                    <img src="{{ secure_asset('/img/carrusel') }}/{{$carrusel->urlfoto}}">
                     {!! Form::file('urlfoto') !!}
                 </div>
             </div>

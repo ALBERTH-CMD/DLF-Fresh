@@ -10,7 +10,7 @@
             <div class="carousel-inner">
             @forelse ($carrusel as $item)
               <div class="carousel-item @if($loop->index==0) active @endif">
-                <img src="{{ asset('/img/carrusel') }}/{{$item->urlfoto}}" class="d-block w-100" alt="{{$item->frase}}">
+                <img src="{{ secure_asset('/img/carrusel') }}/{{$item->urlfoto}}" class="d-block w-100" alt="{{$item->frase}}">
                 <div class="pb-5 carousel-caption d-none d-md-block">
                     <h5>{{$item->descripcion}}</h5>
                     <a href="{{$item->link}}" target="_Blank" class="btn btn-outline-danger">VER MÁS</a>
@@ -60,7 +60,7 @@
                     <div class="col-sm-4">
                         <div class="card">
                             <a href="artesanias/{{$item->categoria->slug}}/{{$item->slug}}">
-                                <img src="{{ asset('/img/producto') }}/{{$item->urlfoto}}" class="card-img-top" alt="{{$item->nombre}}">
+                                <img src="{{ secure_asset('/img/producto') }}/{{$item->urlfoto}}" class="card-img-top" alt="{{$item->nombre}}">
                             </a>
                         </div>
                         <div class="card-footer">
@@ -81,7 +81,7 @@
 
             <div class="md:flex">
                 <div class="md:shrink-0">
-                <img class="object-cover w-full h-85 md:h-full md:w-150" src="{{ asset('/img/post') }}/{{$r->urlfoto}}" alt="{{$r->nombre}}">
+                <img class="object-cover w-full h-85 md:h-full md:w-150" src="{{ secure_asset('/img/post') }}/{{$r->urlfoto}}" alt="{{$r->nombre}}">
                 </div>
                 <div class="p-8">
                 <div class="text-sm font-semibold tracking-wide text-indigo-500 uppercase">{{$r->nombre}}</div>

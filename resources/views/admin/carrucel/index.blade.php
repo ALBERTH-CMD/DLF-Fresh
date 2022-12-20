@@ -21,7 +21,7 @@
                     @forelse ($carrusels as $item)
                     <tr>
                         <td>{{$item->orden}}</td>
-                        <td><img src="{{ asset('/img/carrusel') }}/{{$item->urlfoto}}" width="300"></td>
+                        <td><img src="{{ secure_asset('/img/carrusel') }}/{{$item->urlfoto}}" width="300"></td>
                         <td>
                             <a href="{{ route('admin.carrucel.edit',$item->id)}}" class="btn btn-success">EDITAR</a>
                             {!! Form::open(['method'=>'DELETE','route'=>['admin.carrucel.destroy',$item->id],'style'=>'display:inline']) !!}

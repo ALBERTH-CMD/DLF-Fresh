@@ -1,3 +1,3 @@
 <a href="./">
-    <img src="{{ asset('favicons/prueba.png') }}" alt="DLF Fresh">
+    <img src="{{ secure_asset('favicons/prueba.png') }}" alt="DLF Fresh">
 </a>

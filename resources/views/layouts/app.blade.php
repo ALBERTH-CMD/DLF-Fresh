@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>@yield('title',$config->seo_title)</title>
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}">
         <meta name="description" content="@yield('description',$config->seo_description)">
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="@yield('description',  $config->seo_description)"/>
@@ -14,11 +14,11 @@
         <meta property="og:site_name" content="Consultoria.com"/>
         <meta property="og:image" content="@yield('image','https://proessaconsultorialimentaria.herokuapp.com/img/configuracion/'.$config->seo_urlfoto)"/>
         <link rel="canonical" href="@yield('url','https://proessaconsultorialimentaria.herokuapp.com')"/>
-        <link rel="shortcut icon" href="{{ asset('/img/configuracion') }}/{{$config->urlfavicon}}"/>
+        <link rel="shortcut icon" href="{{ secure_asset('/img/configuracion') }}/{{$config->urlfavicon}}"/>
 
-        <script src="{{ asset('js/jquery.min.js') }}"></script>
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('js/tarjects.js') }}" ></script>
+        <script src="{{ secure_asset('js/jquery.min.js') }}"></script>
+        <script src="{{ secure_asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ secure_asset('js/tarjects.js') }}" ></script>
 
         <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 
@@ -30,8 +30,8 @@
 
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" href="{{asset('css/tarjects.css') }}">
+        <link rel="stylesheet" href="{{secure_asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{secure_asset('css/tarjects.css') }}">
 
 
         @livewireStyles
@@ -69,7 +69,7 @@
         @livewireScripts
 
         <!-- Scripts -->
-        <script src="{{asset('js/app.js')}}"></script>
+        <script src="{{secure_asset('js/app.js')}}"></script>
 
         @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 

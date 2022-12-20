@@ -40,7 +40,7 @@
 
                 <div class="form-group">
                     <label for="urlfoto">IMAGEN</label> <br>
-                    <img src="{{ asset('/img/producto') }}/{{$producto->urlfoto}}">
+                    <img src="{{ secure_asset('/img/producto') }}/{{$producto->urlfoto}}">
                     {!! Form::file('urlfoto') !!}
                 </div>
             </div>

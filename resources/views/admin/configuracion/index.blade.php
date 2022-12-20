@@ -27,7 +27,7 @@
                 </div>
                 <div class="form-group">
                     <label for="seo_urlfoto">IMAGEN DESTACADA</label> <br>
-                    <img src="{{ asset('img/configuracion') }}/{{$registro->seo_urlfoto}}">
+                    <img src="{{ secure_asset('img/configuracion') }}/{{$registro->seo_urlfoto}}">
                     {!! Form::file('seo_urlfoto') !!}
                 </div>
             </div>
@@ -41,7 +41,7 @@
 
                 <div class="col-sm-9">
                     <label for="urlfavicon">FAVICON</label> <br>
-                    <img src="{{ asset('img/configuracion') }}/{{$registro->urlfavicon}}">
+                    <img src="{{ secure_asset('img/configuracion') }}/{{$registro->urlfavicon}}">
                     {!! Form::file('urlfavicon') !!}
                 </div>
                 <div class="col-sm-3">
@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-sm-9">
                     <label for="urllogo">LOGO</label> <br>
-                    <img src="{{ asset('img/configuracion') }}/{{$registro->urllogo}}">
+                    <img src="{{ secure_asset('img/configuracion') }}/{{$registro->urllogo}}">
                     {!! Form::file('urllogo') !!}
                 </div>
             </div>

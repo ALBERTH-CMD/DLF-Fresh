@@ -3,7 +3,7 @@
 <div class="container pb-5 bg-warning">
     <div class="row">
         <h1 class="p-3 mt-5 text-danger">{{$producto->categoria->nombre}}{{$producto->nombre}}</h1>
-        <img src="{{ asset('/img/producto') }}/{{$producto->urlfoto}}" class="img-fluid">
+        <img src="{{ secure_asset('/img/producto') }}/{{$producto->urlfoto}}" class="img-fluid">
 
     </div>
     <div class="m-5 bg-white rounded-lg row">

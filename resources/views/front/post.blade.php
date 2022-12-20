@@ -2,7 +2,7 @@
 <div class="container pb-5 bg-warning">
     <div class="row">
         <h1 class="p-3 mt-5 text-center text-danger w-100">{{$post->nombre}}</h1>
-        <img src="{{ asset('img/post/') }}/{{$post->urlfoto}}" class="mx-auto img-fluid d-block">
+        <img src="{{ secure_asset('img/post/') }}/{{$post->urlfoto}}" class="mx-auto img-fluid d-block">
 
 
 
