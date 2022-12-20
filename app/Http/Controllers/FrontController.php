@@ -67,7 +67,7 @@ class FrontController extends Controller
         if(!empty($r)) {
 
         $email = new EmailSend($r->all());
-        Mail::to('developeddreamscompany@gmail.com')->send($email);
+        Mail::to('systemdeveloperscompany@gmail.com')->send($email);
 
          $nombre    = $_POST['nombre'];
          $email     = $_POST['email'];
