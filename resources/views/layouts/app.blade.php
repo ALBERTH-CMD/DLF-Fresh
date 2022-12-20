@@ -31,7 +31,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" href="{{ asset('css/tarjects.css') }}">
+        <link rel="stylesheet" href="{{asset('css/tarjects.css') }}">
 
 
         @livewireStyles
@@ -70,7 +70,7 @@
 
         <!-- Scripts -->
         <script src="{{asset('js/app.js')}}"></script>
-        //@include('sweetalert::alert')
+
         @include('sweetalert::alert', ['cdn' => "https://cdn.jsdelivr.net/npm/sweetalert2@9"])
 
 

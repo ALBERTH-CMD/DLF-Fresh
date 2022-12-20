@@ -1,5 +1,4 @@
 <x-app-layout>
-
     <div class="p-0 container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -13,8 +12,8 @@
               <div class="carousel-item @if($loop->index==0) active @endif">
                 <img src="{{ asset('/img/carrusel') }}/{{$item->urlfoto}}" class="d-block w-100" alt="{{$item->frase}}">
                 <div class="pb-5 carousel-caption d-none d-md-block">
-                    <h2>{{$item->descripcion}}</h2>
-                    <a href="{{$item->link}}" target="_Blank" class="btn btn-outline-primary">VER MÁS</a>
+                    <h5>{{$item->descripcion}}</h5>
+                    <a href="{{$item->link}}" target="_Blank" class="btn btn-outline-danger">VER MÁS</a>
                 </div>
               </div>
             @empty
@@ -31,24 +30,32 @@
             </a>
           </div>
 
-        <div>
-        <h3 class="p-10 rounded-lg shadow-2xl bg-white max-w-full" style="font-family: fangsong;  font-size: 25px;">{{$config->slogan}}</h3>
-            {{-- Tarjets --}}
-                @include('tarjects')
-        </div>
+    </div>
+    <div class="container-fluid bg-warning">
+            <h1 class="pt-5 pb-5 text-center text-white">{{$config->slogan}}</h1>
+            <div class="container pb-1">
+                <div class="mt-5 mb-5 text-center text-white row justify-content-center lead">
 
+                    <div class="col-sm-3"><p>{{$config->frase_1}}</p></div>
+                    <div class="col-sm-3"><p>{{$config->frase_2}}</p></div>
+                    <div class="col-sm-3"><p>{{$config->frase_3}}</p></div>
+
+                    <div class="mt-5 text-center col-sm-12">
+                        <a href="artesanias" class="btn btn-outline-danger">VER PROYECTOS</a>
+                    </div>
+                </div>
+            </div>
     </div>
 
-    <!-- Productos Para Exportar -->
+    <!-- artesanias -->
 
-    <div>
-        <div class="p-10 rounded-lg shadow-2xl bg-white max-w-full">
-          <div class="p-10 rounded-lg shadow-2xl bg-blue-200 max-w-full">
-            <h1 class="flex justify-center text-lg font-medium leading-10 text-gray-900" style="font-family: fangsong;  font-size: 25px;">CONTACTO</h1>
-            <p style="font-family: fangsong;  font-size: 25px; text-align:center;"> {{$config->celular}}</p>
+    <div class="mt-5 max-w-md mx-auto bg-blue-100 rounded-xl shadow-2xl overflow-hidden md:max-w-2xl">
+        <div class="md:flex">
+          <div class="md:shrink-0">
+            <p class="md:w-48 text-center">CONTACTO <br> {{$config->celular}}</p>
           </div>
             <div class="p-8">
-                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">Exportaciones ACTUALES Y A FUTURO</div>
+                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">PROYECTOS ACTUALES Y A FUTURO</div>
                 @forelse ($producto as $item)
                     <div class="col-sm-4">
                         <div class="card">
@@ -66,9 +73,7 @@
             </div>
         </div>
     </div>
-    <!-- Productos para Exportar /-->
-
-
+    <!-- artesanias /-->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/-->
     <!-- publicaciones-->
     <div class="max-w-md mx-auto mt-5 overflow-hidden bg-white shadow-2xl rounded-xl md:max-w-2xl">
@@ -87,4 +92,5 @@
         @endforeach
     </div>
     <!-- publicaciones/-->
+
 </x-app-layout>
